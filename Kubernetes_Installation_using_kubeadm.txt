@@ -282,7 +282,7 @@ worker-node   Ready    worker                 2m55s   v1.24.1
 
 
 #sudo kubeadm token create --print-join-command
-
+sudo kubeadm token create --print-join-command ( to generate a new command)
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ###Only in Worker Nodes:
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
