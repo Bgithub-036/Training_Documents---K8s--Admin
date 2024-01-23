@@ -67,21 +67,21 @@ EOF
 
 #Apply the new settings without restarting.
 
-sudo sysctl --system
+  sudo sysctl --system
 
 #Install curl.
 
-sudo apt install curl -y
+  sudo apt install curl -y
 
 #Get the apt-key and then add the repository from which we will install containerd.
 
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 
 #Update and then install the containerd package.
 
-sudo apt update -y 
-sudo apt install -y containerd.io
+  sudo apt update -y 
+  sudo apt install -y containerd.io
 
 #Set up the default configuration file.
 
