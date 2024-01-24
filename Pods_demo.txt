@@ -55,7 +55,7 @@ exit
 kubectl expose pod nginx-pod --type=NodePort --port=80
 
 
--p <host_port>:<container_port>
+#-p <host_port>:<container_port>
 
 kubectl get svc
 
